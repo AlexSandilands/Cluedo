@@ -1,0 +1,29 @@
+w	w	w	w	w	w	Start: Eleanor Peacock 	ms	w	w	w	w	w	ms	w	w	w	w	w	w	Start: Victor Plum 	ms	w	w	w	-	-	-	-
+w	-	-	-	-	w	ms	ms	w	-	-	-	w	?	w	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-
+w	-	-	-	-	w	ms	ms	w	-	-	-	Door: Theater	PreDoor: Theater	w	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-
+w	-	Room: Spa	-	-	w	ms	ms	w	-	Room: Theater	-	w	ms	w	-	Room: Living-Room	-	-	w	ms	ms	w	-	Room: Observatory	-	-	-	-
+w	-	-	-	-	w	ms	?	w	-	-	-	w	ms	w	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-
+w	-	-	-	-	Door: Spa	ms	ms	w	-	-	-	w	PreDoor: Living-Room	Door: Living-Room	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-
+w	-	-	-	-	PreDoor: Spa	ms	ms	w	-	-	-	w	ms	w	-	-	-	-	w	ms	?	w	-	-	-	-	-	-
+w	w	w	w	w	ms	ms	ms	w	w	Door: Theater	w	w	ms	w	-	-	-	w	w	ms	ms	w	-	-	-	-	-	-
+ms	ms	ms	?	ms	ms	ms	ms	ms	ms	PreDoor: Theater	ms	ms	ms	ms	w	Door: Living-Room	w	ms	ms	ms	PreDoor: Observatory	Door: Observatory	w	w	-	-	-	-
+Start: Jacob Green	ms	ms	ms	ms	ms	ms	ms	ms	ms	ms	?	ms	ms	ms	ms	PreDoor: Living-Room	ms	ms	ms	ms	ms	ms	ms	-	-	-	-	-
+w	w	w	w	ms	PreDoor: Patio	ms	ms	ms	ms	ms	ms	ms	ms	PreDoor: Pool	ms	?	ms	ms	ms	ms	ms	PreDoor: Hall	ms	-	-	-	-	-
+w	-	-	-	w	Door: Patio	w	w	ms	ms	w	w	w	w	Door: Pool	w	w	w	ms	w	w	w	Door: Hall	w	-	-	-	-	-
+w	-	-	-	-	-	-	Door: Patio	PreDoor: Patio	ms	w	-	-	-	-	-	-	w	ms	w	-	-	-	w	-	-	-	-	-
+w	-	-	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-	w	PreDoor: Hall	Door: Hall	-	-	-	w	-	-	-	-	-
+w	-	Room: Patio	-	-	-	-	w	?	ms	w	-	-	-	Room: Pool	-	-	w	PreDoor: Hall	Door: Hall	-	Room: Hall	-	w	-	-	-	-	-
+w	-	-	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-	w	ms	w	-	-	-	w	-	-	-	-	-
+w	-	-	-	-	-	-	Door: Patio	PreDoor: Patio	ms	Door: Pool	w	w	w	w	w	w	Door: Pool	ms	w	-	-	-	w	-	-	-	-	-
+w	-	-	-	w	Door: Patio	w	w	ms	ms	PreDoor: Pool	ms	ms	ms	?	ms	ms	PreDoor: Pool	ms	w	w	w	w	w	-	-	-	-	-
+w	w	w	w	?	PreDoor: Patio	ms	ms	ms	ms	ms	ms	PreDoor: Dining-Room	ms	ms	ms	ms	ms	ms	ms	?	ms	ms	ms	-	-	-	-	-
+Start Diane White 	ms	ms	ms	ms	ms	ms	ms	ms	ms	w	w	Door: Dining-Room	w	w	w	ms	ms	ms	ms	ms	ms	ms	ms	-	-	-	-	-
+ms	ms	ms	ms	ms	ms	ms	ms	ms	ms	w	-	-	-	-	w	ms	ms	ms	ms	PreDoor: Guest-House	w	w	w	-	-	-	-	-
+w	w	w	w	w	w	PreDoor: Kitchen	ms	ms	ms	w	-	-	-	-	Door: Dining-Room	PreDoor: Dining-Room	ms	ms	ms	Door: Guest-House	-	-	-	-	-	-	-	-
+w	-	-	-	-	-	Door: Kitchen	ms	ms	ms	w	-	-	-	-	w	ms	ms	?	ms	w	-	-	-	-	-	-	-	-
+w	-	-	-	-	-	w	ms	?	w	-	-	-	-	-	-	w	ms	ms	ms	w	-	-	-	-	-	-	-	-
+w	-	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-	w	ms	ms	ms	w	-	-	-	Room: Guest-House	-	-	-	-
+w	-	Room: Kitchen	-	-	-	w	ms	ms	w	-	-	Room: Dining-Room	-	-	-	w	ms	ms	ms	w	-	-	-	-	-	-	-	-
+w	-	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-	w	ms	ms	ms	w	-	-	-	-	-	-	-	-
+w	-	-	-	-	-	w	ms	ms	w	-	-	-	-	-	-	w	ms	ms	ms	w	-	-	-	-	-	-	-	-
+w	w	w	w	w	w	w	Start: Jack Mustard	ms	w	w	w	w	w	w	w	w	ms	Start: Kasandra Scarlett	ms	w	w	w	w	-	-	-	-	-
