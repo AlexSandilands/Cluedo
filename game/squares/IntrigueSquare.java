@@ -7,9 +7,9 @@ package game.squares;
  */
 public class IntrigueSquare extends Square{
 
-	public IntrigueSquare(int col, int row){
-		super.col = col;
-		super.row = row;
-	}
-	
+    public IntrigueSquare(int col, int row){
+        super.col = col;
+        super.row = row;
+    }
+
 }

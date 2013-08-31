@@ -22,247 +22,247 @@ import javax.swing.UIManager;
 
 public class SelectionFrame extends JFrame {
 
-	private Game game;
-	private int count = 1;
-	private int numPlayers;
+    private Game game;
+    private int count = 1;
+    private int numPlayers;
 
-	// For the character selection frame
-	private JLabel text;
-	private JPanel south;
+    // For the character selection frame
+    private JLabel text;
+    private JPanel south;
 
-	// For the choosing number of players frame
-	private JPanel north;
-	private JPanel buttons;
+    // For the choosing number of players frame
+    private JPanel north;
+    private JPanel buttons;
 
-	public SelectionFrame() {
-		super("Select Characters");
+    public SelectionFrame() {
+        super("Select Characters");
 
-		setSize(1000, 500);
-		chooseNumPlayers();
+        setSize(1000, 500);
+        chooseNumPlayers();
 
-		// Get the size of the screen
-		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        // Get the size of the screen
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-		// Determine the new location of the window
-		int w = this.getSize().width;
-		int h = this.getSize().height;
-		
-		int x = (dim.width/2 - w/2);
-		int y = (dim.height/2 - h/2);
+        // Determine the new location of the window
+        int w = this.getSize().width;
+        int h = this.getSize().height;
 
-		// Move the window
-		setLocation(x, y);
+        int x = (dim.width/2 - w/2);
+        int y = (dim.height/2 - h/2);
 
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setVisible(true);
+        // Move the window
+        setLocation(x, y);
 
-		pack();
-	}
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
 
-	public SelectionFrame(Game g) {
-		super("Select Characters");
-		this.game = g;
+        pack();
+    }
 
-		setSize(1000, 500);
-		chooseNumPlayers();
+    public SelectionFrame(Game g) {
+        super("Select Characters");
+        this.game = g;
 
-		// Get the size of the screen
-		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        setSize(1000, 500);
+        chooseNumPlayers();
 
-		// Determine the new location of the window
-		int w = this.getSize().width;
-		int h = this.getSize().height;
-		int x = (dim.width - w) / 2;
-		int y = (dim.height - h) / 2;
+        // Get the size of the screen
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-		// Move the window
-		setLocation(x, y);
+        // Determine the new location of the window
+        int w = this.getSize().width;
+        int h = this.getSize().height;
+        int x = (dim.width - w) / 2;
+        int y = (dim.height - h) / 2;
 
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setVisible(true);
+        // Move the window
+        setLocation(x, y);
 
-		pack();
-	}
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
 
-	public void chooseNumPlayers() {
-		north = new JPanel(new BorderLayout());
-		north.setBackground(new Color(139, 90, 0));
-		north.setPreferredSize(new Dimension(1000, 300));
+        pack();
+    }
 
-		JLabel lab = new JLabel("Welcome to Cluedo!");
-		lab.setFont(new Font("Serif", Font.BOLD, 50));
-		lab.setForeground(Color.WHITE);
-		lab.setHorizontalAlignment(JLabel.CENTER);
-		lab.setSize(100, 30);
-		
-		JLabel lab2 = new JLabel("How Many People Are Playing:");
-		lab2.setFont(new Font("Serif", Font.BOLD, 40));
-		lab2.setForeground(Color.WHITE);
-		lab2.setHorizontalAlignment(JLabel.CENTER);
-		lab2.setSize(100, 30);
+    public void chooseNumPlayers() {
+        north = new JPanel(new BorderLayout());
+        north.setBackground(new Color(139, 90, 0));
+        north.setPreferredSize(new Dimension(1000, 300));
 
-		north.add(lab, BorderLayout.NORTH);
-		north.add(lab2, BorderLayout.CENTER);
+        JLabel lab = new JLabel("Welcome to Cluedo!");
+        lab.setFont(new Font("Serif", Font.BOLD, 50));
+        lab.setForeground(Color.WHITE);
+        lab.setHorizontalAlignment(JLabel.CENTER);
+        lab.setSize(100, 30);
 
-		buttons = new JPanel(new FlowLayout());
-		buttons.setBackground(new Color(139, 90, 0));
-		buttons.setSize(650, 100);
+        JLabel lab2 = new JLabel("How Many People Are Playing:");
+        lab2.setFont(new Font("Serif", Font.BOLD, 40));
+        lab2.setForeground(Color.WHITE);
+        lab2.setHorizontalAlignment(JLabel.CENTER);
+        lab2.setSize(100, 30);
 
-		UIManager.put("Button.foreground", Color.WHITE);
-		JButton three = new JButton("Three");
-		three.addActionListener(new pButtonListener(3));
-		three.setBackground(new Color(0, 100, 0));
-		three.setPreferredSize(new Dimension(100, 50));
-		buttons.add(three);
+        north.add(lab, BorderLayout.NORTH);
+        north.add(lab2, BorderLayout.CENTER);
 
-		JButton four = new JButton("Four");
-		four.addActionListener(new pButtonListener(4));
-		four.setBackground(new Color(0, 100, 0));
-		four.setPreferredSize(new Dimension(100, 50));
-		buttons.add(four);
+        buttons = new JPanel(new FlowLayout());
+        buttons.setBackground(new Color(139, 90, 0));
+        buttons.setSize(650, 100);
 
-		JButton five = new JButton("Five");
-		five.addActionListener(new pButtonListener(5));
-		five.setBackground(new Color(0, 100, 0));
-		five.setPreferredSize(new Dimension(100, 50));
-		buttons.add(five);
+        UIManager.put("Button.foreground", Color.WHITE);
+        JButton three = new JButton("Three");
+        three.addActionListener(new pButtonListener(3));
+        three.setBackground(new Color(0, 100, 0));
+        three.setPreferredSize(new Dimension(100, 50));
+        buttons.add(three);
 
-		JButton six = new JButton("Six");
-		six.addActionListener(new pButtonListener(6));
-		six.setBackground(new Color(0, 100, 0));
-		six.setPreferredSize(new Dimension(100, 50));
-		buttons.add(six);
+        JButton four = new JButton("Four");
+        four.addActionListener(new pButtonListener(4));
+        four.setBackground(new Color(0, 100, 0));
+        four.setPreferredSize(new Dimension(100, 50));
+        buttons.add(four);
 
-		add(north, BorderLayout.CENTER);
-		add(buttons, BorderLayout.SOUTH);
-	}
+        JButton five = new JButton("Five");
+        five.addActionListener(new pButtonListener(5));
+        five.setBackground(new Color(0, 100, 0));
+        five.setPreferredSize(new Dimension(100, 50));
+        buttons.add(five);
 
-	public void makeCharacterFrame() {
-		remove(north);
-		remove(buttons);
-		repaint();
-		this.resize(new Dimension(1000, 500));
+        JButton six = new JButton("Six");
+        six.addActionListener(new pButtonListener(6));
+        six.setBackground(new Color(0, 100, 0));
+        six.setPreferredSize(new Dimension(100, 50));
+        buttons.add(six);
 
-		charSelect();
-		southPane();
-		repaint();
-	}
+        add(north, BorderLayout.CENTER);
+        add(buttons, BorderLayout.SOUTH);
+    }
 
-	public void southPane() {
-		south = new JPanel();
-		south.setBackground(new Color(139, 90, 0));
-		south.setPreferredSize(new Dimension(1000, 100));
+    public void makeCharacterFrame() {
+        remove(north);
+        remove(buttons);
+        repaint();
+        this.resize(new Dimension(1000, 500));
 
-		text = new JLabel("Player " + count + ": Choose Character");
-		text.setFont(new Font("Serif", Font.BOLD, 40));
-		text.setForeground(Color.WHITE);
-		text.setSize(100, 30);
+        charSelect();
+        southPane();
+        repaint();
+    }
 
-		south.add(text, BorderLayout.CENTER);
-		add(south, BorderLayout.CENTER);
-	}
+    public void southPane() {
+        south = new JPanel();
+        south.setBackground(new Color(139, 90, 0));
+        south.setPreferredSize(new Dimension(1000, 100));
 
-	public void setLabel(int i) {
-		if (i == numPlayers + 1) {
-			south.remove(text);
-			south.repaint();
-			repaint();
+        text = new JLabel("Player " + count + ": Choose Character");
+        text.setFont(new Font("Serif", Font.BOLD, 40));
+        text.setForeground(Color.WHITE);
+        text.setSize(100, 30);
 
-			this.dispose();
-			game.playGame();
-			return;
-		}
-		text.setText("Player " + count + ": Choose Character");
-		south.repaint();
-		repaint();
-	}
+        south.add(text, BorderLayout.CENTER);
+        add(south, BorderLayout.CENTER);
+    }
 
-	public void charSelect() {
-		JPanel buttonPane = new JPanel();
-		buttonPane.setLayout(new FlowLayout());
-		buttonPane.setPreferredSize(new Dimension(1000, 250));
-		buttonPane.setBackground(new Color(139, 90, 0));
+    public void setLabel(int i) {
+        if (i == numPlayers + 1) {
+            south.remove(text);
+            south.repaint();
+            repaint();
 
-		// Makes the icons
-		Icon i1 = new ImageIcon("src/Characters/Peacock.jpg");
-		Icon i2 = new ImageIcon("src/Characters/Plum.jpg");
-		Icon i3 = new ImageIcon("src/Characters/Green.jpg");
-		Icon i4 = new ImageIcon("src/Characters/White.jpg");
-		Icon i5 = new ImageIcon("src/Characters/Mustard.jpg");
-		Icon i6 = new ImageIcon("src/Characters/Scarlett.jpg");
+            this.dispose();
+            game.playGame();
+            return;
+        }
+        text.setText("Player " + count + ": Choose Character");
+        south.repaint();
+        repaint();
+    }
 
-		// Makes the buttons
-		JButton peacock = new JButton(i1);
-		peacock.setBackground(new Color(0, 100, 0));
-		peacock.addActionListener(new CharButtonListener(1, buttonPane));
+    public void charSelect() {
+        JPanel buttonPane = new JPanel();
+        buttonPane.setLayout(new FlowLayout());
+        buttonPane.setPreferredSize(new Dimension(1000, 250));
+        buttonPane.setBackground(new Color(139, 90, 0));
 
-		JButton plum = new JButton(i2);
-		plum.setBackground(new Color(0, 100, 0));
-		plum.addActionListener(new CharButtonListener(2, buttonPane));
+        // Makes the icons
+        Icon i1 = new ImageIcon("src/Characters/Peacock.jpg");
+        Icon i2 = new ImageIcon("src/Characters/Plum.jpg");
+        Icon i3 = new ImageIcon("src/Characters/Green.jpg");
+        Icon i4 = new ImageIcon("src/Characters/White.jpg");
+        Icon i5 = new ImageIcon("src/Characters/Mustard.jpg");
+        Icon i6 = new ImageIcon("src/Characters/Scarlett.jpg");
 
-		JButton green = new JButton(i3);
-		green.setBackground(new Color(0, 100, 0));
-		green.addActionListener(new CharButtonListener(3, buttonPane));
+        // Makes the buttons
+        JButton peacock = new JButton(i1);
+        peacock.setBackground(new Color(0, 100, 0));
+        peacock.addActionListener(new CharButtonListener(1, buttonPane));
 
-		JButton white = new JButton(i4);
-		white.setBackground(new Color(0, 100, 0));
-		white.addActionListener(new CharButtonListener(4, buttonPane));
+        JButton plum = new JButton(i2);
+        plum.setBackground(new Color(0, 100, 0));
+        plum.addActionListener(new CharButtonListener(2, buttonPane));
 
-		JButton mustard = new JButton(i5);
-		mustard.setBackground(new Color(0, 100, 0));
-		mustard.addActionListener(new CharButtonListener(5, buttonPane));
+        JButton green = new JButton(i3);
+        green.setBackground(new Color(0, 100, 0));
+        green.addActionListener(new CharButtonListener(3, buttonPane));
 
-		JButton scarlett = new JButton(i6);
-		scarlett.setBackground(new Color(0, 100, 0));
-		scarlett.addActionListener(new CharButtonListener(6, buttonPane));
+        JButton white = new JButton(i4);
+        white.setBackground(new Color(0, 100, 0));
+        white.addActionListener(new CharButtonListener(4, buttonPane));
 
-		buttonPane.add(peacock);
-		buttonPane.add(plum);
-		buttonPane.add(green);
-		buttonPane.add(white);
-		buttonPane.add(mustard);
-		buttonPane.add(scarlett);
+        JButton mustard = new JButton(i5);
+        mustard.setBackground(new Color(0, 100, 0));
+        mustard.addActionListener(new CharButtonListener(5, buttonPane));
 
-		add(buttonPane, BorderLayout.NORTH);
-	}
+        JButton scarlett = new JButton(i6);
+        scarlett.setBackground(new Color(0, 100, 0));
+        scarlett.addActionListener(new CharButtonListener(6, buttonPane));
 
-	public class pButtonListener implements ActionListener {
+        buttonPane.add(peacock);
+        buttonPane.add(plum);
+        buttonPane.add(green);
+        buttonPane.add(white);
+        buttonPane.add(mustard);
+        buttonPane.add(scarlett);
 
-		private int num;
+        add(buttonPane, BorderLayout.NORTH);
+    }
 
-		public pButtonListener(int i) {
-			this.num = i;
-		}
+    public class pButtonListener implements ActionListener {
 
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			numPlayers = num;
-			makeCharacterFrame();
-		}
+        private int num;
 
-	}
+        public pButtonListener(int i) {
+            this.num = i;
+        }
 
-	public class CharButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            numPlayers = num;
+            makeCharacterFrame();
+        }
 
-		private int charNum;
-		private JPanel pane;
+    }
 
-		public CharButtonListener(int charNum, JPanel pane) {
-			this.charNum = charNum;
-			this.pane = pane;
-		}
+    public class CharButtonListener implements ActionListener {
 
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			game.addPlayer(charNum);
-			
-			pane.remove((Component) e.getSource());
-			setLabel(++count);
-		}
+        private int charNum;
+        private JPanel pane;
 
-	}
+        public CharButtonListener(int charNum, JPanel pane) {
+            this.charNum = charNum;
+            this.pane = pane;
+        }
 
-	public static void main(String[] args) {
-		new SelectionFrame();
-	}
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            game.addPlayer(charNum);
+
+            pane.remove((Component) e.getSource());
+            setLabel(++count);
+        }
+
+    }
+
+    public static void main(String[] args) {
+        new SelectionFrame();
+    }
 }

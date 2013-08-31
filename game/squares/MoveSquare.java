@@ -6,10 +6,10 @@ package game.squares;
  *
  */
 public class MoveSquare extends Square{
-	
-	public MoveSquare(int col, int row){
-		super.col = col;
-		super.row = row;
-	}
+
+    public MoveSquare(int col, int row){
+        super.col = col;
+        super.row = row;
+    }
 
 }

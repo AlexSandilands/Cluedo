@@ -9,19 +9,19 @@ package game.squares;
  */
 public class NullSquare extends Square {
 
-	private RoomSquare rs;
+    private RoomSquare rs;
 
-	public NullSquare(int col, int row) {
-		super.col = col;
-		super.row = row;
-	}
+    public NullSquare(int col, int row) {
+        super.col = col;
+        super.row = row;
+    }
 
-	public void setRoomSquare(RoomSquare rs) {
-		this.rs = rs;
-	}
+    public void setRoomSquare(RoomSquare rs) {
+        this.rs = rs;
+    }
 
-	public RoomSquare getRoomSquare() {
-		return rs;
-	}
+    public RoomSquare getRoomSquare() {
+        return rs;
+    }
 
 }

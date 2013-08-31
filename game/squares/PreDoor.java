@@ -9,17 +9,17 @@ import game.objects.Room;
  */
 public class PreDoor extends Square{
 
-	private Room r;
-	
-	public PreDoor(Room r, int col, int row){
-		this.r = r;
-		super.col = col;
-		super.row = row;
-	}
+    private Room r;
 
-	public Room getRoom(){
-		return r;
-	}
+    public PreDoor(Room r, int col, int row){
+        this.r = r;
+        super.col = col;
+        super.row = row;
+    }
+
+    public Room getRoom(){
+        return r;
+    }
 
 
 }
