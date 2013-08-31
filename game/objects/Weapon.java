@@ -27,23 +27,23 @@ public class Weapon implements GameItem{
 
     public Icon getIcon(){
         if(name.equals(Weapons.Rope)){
-            return new ImageIcon("src/Weapons/Rope.jpg");
+            return new ImageIcon("DataFiles/Weapons/Rope.jpg");
         }else if(name.equals(Weapons.Axe)){
-            return new ImageIcon("src/Weapons/Axe.jpg");
+            return new ImageIcon("DataFiles/Weapons/Axe.jpg");
         }else if(name.equals(Weapons.Baseball_Bat)){
-            return new ImageIcon("src/Weapons/Baseball Bat.jpg");
+            return new ImageIcon("DataFiles/Weapons/Baseball Bat.jpg");
         }else if(name.equals(Weapons.Candlestick)){
-            return new ImageIcon("src/Weapons/Candle Stick.jpg");
+            return new ImageIcon("DataFiles/Weapons/Candle Stick.jpg");
         }else if(name.equals(Weapons.Dumbbell)){
-            return new ImageIcon("src/Weapons/Dumbell.jpg");
+            return new ImageIcon("DataFiles/Weapons/Dumbell.jpg");
         }else if(name.equals(Weapons.Knife)){
-            return new ImageIcon("src/Weapons/Knife.jpg");
+            return new ImageIcon("DataFiles/Weapons/Knife.jpg");
         }else if(name.equals(Weapons.Pistol)){
-            return new ImageIcon("src/Weapons/Pistol.jpg");
+            return new ImageIcon("DataFiles/Weapons/Pistol.jpg");
         }else if(name.equals(Weapons.Poison)){
-            return new ImageIcon("src/Weapons/Poison.jpg");
+            return new ImageIcon("DataFiles/Weapons/Poison.jpg");
         }else if(name.equals(Weapons.Trophy)){
-            return new ImageIcon("src/Weapons/Trophy.jpg");
+            return new ImageIcon("DataFiles/Weapons/Trophy.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid weapon");
@@ -52,23 +52,23 @@ public class Weapon implements GameItem{
 
     public Icon getSmallIcon(){
         if(name.equals(Weapons.Rope)){
-            return new ImageIcon("src/Cards/Weapons/Small Rope.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Rope.jpg");
         }else if(name.equals(Weapons.Axe)){
-            return new ImageIcon("src/Cards/Weapons/Small Axe.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Axe.jpg");
         }else if(name.equals(Weapons.Baseball_Bat)){
-            return new ImageIcon("src/Cards/Weapons/Small Baseball Bat.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Baseball Bat.jpg");
         }else if(name.equals(Weapons.Candlestick)){
-            return new ImageIcon("src/Cards/Weapons/Small Candle Stick.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Candle Stick.jpg");
         }else if(name.equals(Weapons.Dumbbell)){
-            return new ImageIcon("src/Cards/Weapons/Small Dumbell.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Dumbell.jpg");
         }else if(name.equals(Weapons.Knife)){
-            return new ImageIcon("src/Cards/Weapons/Small Knife.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Knife.jpg");
         }else if(name.equals(Weapons.Pistol)){
-            return new ImageIcon("src/Cards/Weapons/Small Pistol.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Pistol.jpg");
         }else if(name.equals(Weapons.Poison)){
-            return new ImageIcon("src/Cards/Weapons/Small Poison.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Poison.jpg");
         }else if(name.equals(Weapons.Trophy)){
-            return new ImageIcon("src/Cards/Weapons/Small Trophy.jpg");
+            return new ImageIcon("DataFiles/Cards/Weapons/Small Trophy.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid weapon");

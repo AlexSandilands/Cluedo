@@ -48,7 +48,7 @@ public class HelpFrame extends JFrame {
 
     private void makeMainPanel() {
         try{
-            help = ImageIO.read(new File("src/Data/HelpScreen.png"));
+            help = ImageIO.read(new File("DataFiles/Data/HelpScreen.png"));
         }catch(IOException e){
             throw new Error("Help file was not found");
         }

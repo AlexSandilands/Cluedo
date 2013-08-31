@@ -50,7 +50,7 @@ public class NoteBookFrame extends JFrame {
         setLocation(x, y);
         // ----------------------------------------------------------
 
-        noteFile = new File("src/Data/NoteBook.jpg");
+        noteFile = new File("DataFiles/Data/NoteBook.jpg");
 
         // Loads the image into the buffered image
         try {

@@ -94,23 +94,23 @@ public class Room implements GameItem{
 
     public Icon getIcon(){
         if(name.equals("Spa")){
-            return new ImageIcon("src/Rooms/Spa.jpg");
+            return new ImageIcon("DataFiles/Rooms/Spa.jpg");
         }else if(name.equals("Theater")){
-            return new ImageIcon("src/Rooms/Theater.jpg");
+            return new ImageIcon("DataFiles/Rooms/Theater.jpg");
         }else if(name.equals("Living-Room")){
-            return new ImageIcon("src/Rooms/Living Room.jpg");
+            return new ImageIcon("DataFiles/Rooms/Living Room.jpg");
         }else if(name.equals("Observatory")){
-            return new ImageIcon("src/Rooms/Observatory.jpg");
+            return new ImageIcon("DataFiles/Rooms/Observatory.jpg");
         }else if(name.equals("Patio")){
-            return new ImageIcon("src/Rooms/Patio.jpg");
+            return new ImageIcon("DataFiles/Rooms/Patio.jpg");
         }else if(name.equals("Kitchen")){
-            return new ImageIcon("src/Rooms/Kitchen.jpg");
+            return new ImageIcon("DataFiles/Rooms/Kitchen.jpg");
         }else if(name.equals("Hall")){
-            return new ImageIcon("src/Rooms/Hall.jpg");
+            return new ImageIcon("DataFiles/Rooms/Hall.jpg");
         }else if(name.equals("Dining-Room")){
-            return new ImageIcon("src/Rooms/Dining Room.jpg");
+            return new ImageIcon("DataFiles/Rooms/Dining Room.jpg");
         }else if(name.equals("Guest-House")){
-            return new ImageIcon("src/Rooms/Guest House.jpg");
+            return new ImageIcon("DataFiles/Rooms/Guest House.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid room");
@@ -120,23 +120,23 @@ public class Room implements GameItem{
     @Override
     public Icon getSmallIcon() {
         if(name.equals("Spa")){
-            return new ImageIcon("src/Cards/Rooms/Small Spa.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Spa.jpg");
         }else if(name.equals("Theater")){
-            return new ImageIcon("src/Cards/Rooms/Small Theater.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Theater.jpg");
         }else if(name.equals("Living-Room")){
-            return new ImageIcon("src/Cards/Rooms/Small Living Room.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Living Room.jpg");
         }else if(name.equals("Observatory")){
-            return new ImageIcon("src/Cards/Rooms/Small Observatory.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Observatory.jpg");
         }else if(name.equals("Patio")){
-            return new ImageIcon("src/Cards/Rooms/Small Patio.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Patio.jpg");
         }else if(name.equals("Kitchen")){
-            return new ImageIcon("src/Cards/Rooms/Small Kitchen.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Kitchen.jpg");
         }else if(name.equals("Hall")){
-            return new ImageIcon("src/Cards/Rooms/Small Hall.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Hall.jpg");
         }else if(name.equals("Dining-Room")){
-            return new ImageIcon("src/Cards/Rooms/Small Dining Room.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Dining Room.jpg");
         }else if(name.equals("Guest-House")){
-            return new ImageIcon("src/Cards/Rooms/Small Guest House.jpg");
+            return new ImageIcon("DataFiles/Cards/Rooms/Small Guest House.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid room");

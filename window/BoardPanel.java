@@ -40,7 +40,7 @@ public class BoardPanel extends JPanel implements MouseInputListener {
         this.board = board;
         this.game = game;
 
-        boardFile = new File("src/Boards/Default.jpg");
+        boardFile = new File("DataFiles/Boards/Default.jpg");
 
         // Loads the image into the buffered image
         try {

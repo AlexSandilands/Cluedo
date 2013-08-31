@@ -115,7 +115,7 @@ public class Menus extends JMenu implements ActionListener{
             }
         }
         else if(e.getSource() == boardLayout){
-            JFileChooser fc = new JFileChooser("src/Boards/");
+            JFileChooser fc = new JFileChooser("DataFiles/Boards/");
             File f = null;
             int value = fc.showDialog(null, "Select File");
             if(value == JFileChooser.APPROVE_OPTION){

@@ -115,7 +115,7 @@ public class Game {
         JPanel main = new JPanel(new BorderLayout());
         main.setBackground(new Color(139, 90, 0));
 
-        Icon win = new ImageIcon("src/Data/Win.jpg");
+        Icon win = new ImageIcon("DataFiles/Data/Win.jpg");
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setBackground(new Color(139, 90, 0));
@@ -175,7 +175,7 @@ public class Game {
         loseFrame.setLocation(x, y);
         // ----------------------------------------------------------
 
-        Icon lose = new ImageIcon("src/Data/you_lose.jpg");
+        Icon lose = new ImageIcon("DataFiles/Data/you_lose.jpg");
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setBackground(Color.BLACK);
@@ -240,7 +240,7 @@ public class Game {
         loseFrame.setLocation(x, y);
         // ----------------------------------------------------------
 
-        Icon lose = new ImageIcon("src/Data/hourglass.jpg");
+        Icon lose = new ImageIcon("DataFiles/Data/hourglass.jpg");
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setBackground(Color.BLACK);

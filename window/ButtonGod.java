@@ -100,7 +100,7 @@ public class ButtonGod {
         rollPanel.setSize(new Dimension(150, 150));
         rollPanel.setBackground(new Color(139, 90, 0));
 
-        Icon dice = new ImageIcon("src/Data/Dice.png");
+        Icon dice = new ImageIcon("DataFiles/Data/Dice.png");
         JButton roll = new JButton(dice);
 
         rollValue = new JTextField(2);

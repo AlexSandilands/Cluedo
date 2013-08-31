@@ -139,7 +139,7 @@ public class Player {
             card.setHorizontalAlignment(JLabel.CENTER);
             card.setForeground(Color.WHITE);
 
-            Icon mark = new ImageIcon("src/Data/Questionmark.jpg");
+            Icon mark = new ImageIcon("DataFiles/Data/Questionmark.jpg");
             JLabel question = new JLabel(mark);
 
             mainPanel.add(drew, BorderLayout.NORTH);
@@ -187,7 +187,7 @@ public class Player {
             number.setHorizontalAlignment(JLabel.CENTER);
             number.setForeground(Color.WHITE);
 
-            Icon mark = new ImageIcon("src/Data/Questionmark.jpg");
+            Icon mark = new ImageIcon("DataFiles/Data/Questionmark.jpg");
             JLabel question = new JLabel(mark);
 
             mainPanel.add(drew, BorderLayout.NORTH);

@@ -184,12 +184,12 @@ public class SelectionFrame extends JFrame {
         buttonPane.setBackground(new Color(139, 90, 0));
 
         // Makes the icons
-        Icon i1 = new ImageIcon("src/Characters/Peacock.jpg");
-        Icon i2 = new ImageIcon("src/Characters/Plum.jpg");
-        Icon i3 = new ImageIcon("src/Characters/Green.jpg");
-        Icon i4 = new ImageIcon("src/Characters/White.jpg");
-        Icon i5 = new ImageIcon("src/Characters/Mustard.jpg");
-        Icon i6 = new ImageIcon("src/Characters/Scarlett.jpg");
+        Icon i1 = new ImageIcon("DataFiles/Characters/Peacock.jpg");
+        Icon i2 = new ImageIcon("DataFiles/Characters/Plum.jpg");
+        Icon i3 = new ImageIcon("DataFiles/Characters/Green.jpg");
+        Icon i4 = new ImageIcon("DataFiles/Characters/White.jpg");
+        Icon i5 = new ImageIcon("DataFiles/Characters/Mustard.jpg");
+        Icon i6 = new ImageIcon("DataFiles/Characters/Scarlett.jpg");
 
         // Makes the buttons
         JButton peacock = new JButton(i1);

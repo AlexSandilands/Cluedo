@@ -77,17 +77,17 @@ public class GameCharacter implements GameItem{
 
     public Icon getIcon() {
         if(name.equals("Eleanor Peacock")){
-            return new ImageIcon("src/Characters/Peacock.jpg");
+            return new ImageIcon("DataFiles/Characters/Peacock.jpg");
         }else if(name.equals("Victor Plum")){
-            return new ImageIcon("src/Characters/Plum.jpg");
+            return new ImageIcon("DataFiles/Characters/Plum.jpg");
         }else if(name.equals("Jacob Green")){
-            return new ImageIcon("src/Characters/Green.jpg");
+            return new ImageIcon("DataFiles/Characters/Green.jpg");
         }else if(name.equals("Diane White")){
-            return new ImageIcon("src/Characters/White.jpg");
+            return new ImageIcon("DataFiles/Characters/White.jpg");
         }else if(name.equals("Jack Mustard")){
-            return new ImageIcon("src/Characters/Mustard.jpg");
+            return new ImageIcon("DataFiles/Characters/Mustard.jpg");
         }else if(name.equals("Kasandra Scarlett")){
-            return new ImageIcon("src/Characters/Scarlett.jpg");
+            return new ImageIcon("DataFiles/Characters/Scarlett.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid name");
@@ -97,17 +97,17 @@ public class GameCharacter implements GameItem{
     @Override
     public Icon getSmallIcon() {
         if(name.equals("Eleanor Peacock")){
-            return new ImageIcon("src/Cards/Characters/SmallPeacock.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallPeacock.jpg");
         }else if(name.equals("Victor Plum")){
-            return new ImageIcon("src/Cards/Characters/SmallPlum.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallPlum.jpg");
         }else if(name.equals("Jacob Green")){
-            return new ImageIcon("src/Cards/Characters/SmallGreen.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallGreen.jpg");
         }else if(name.equals("Diane White")){
-            return new ImageIcon("src/Cards/Characters/SmallWhite.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallWhite.jpg");
         }else if(name.equals("Jack Mustard")){
-            return new ImageIcon("src/Cards/Characters/SmallMustard.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallMustard.jpg");
         }else if(name.equals("Kasandra Scarlett")){
-            return new ImageIcon("src/Cards/Characters/SmallScarlett.jpg");
+            return new ImageIcon("DataFiles/Cards/Characters/SmallScarlett.jpg");
         }
         else{
             throw new Error(name.toString()+" is not a valid name");

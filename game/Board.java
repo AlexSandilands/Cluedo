@@ -44,7 +44,7 @@ public class Board {
 
     public Board() {
         // file = chooseFile();
-        file = new File("src/Data/Board");
+        file = new File("DataFiles/Data/Board");
         readBoard();
     }
 
