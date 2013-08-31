@@ -11,4 +11,5 @@ To Run
 -------
 
 $ javac game/Game.java
+
 $ java game.Game
